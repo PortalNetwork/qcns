@@ -17,12 +17,10 @@ contract QCNSRegistrar {
 
     /**
      * Constructor.
-     * @param qcnsAddr The address of the QCNS registry.
-     * @param node The node that this registrar administers.
      */
-    function QCNSRegistrar(QCNS qcnsAddr, bytes32 node) public {
-        qcns = qcnsAddr;
-        rootNode = node;
+    function QCNSRegistrar() public {
+        qcns = QCNS(0xFCb7BdFAf92e1114EA023fe2d5e420A4FF1A972e);
+        rootNode = 0x594a477ed3f0b042faff347a58ea6074459e468efbb5aa3a2c51f7c3673be7cf;
     }
 
     /**
