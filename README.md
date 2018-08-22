@@ -16,6 +16,9 @@ QCNS is the Quarkchain Name Service, a distributed, open, and extensible naming 
     - [Resolver](./docs/RESOLVER.md)
 -  [Integration](./docs/INTEGRATION.md)
 
+## 📝 Guideline
+- [Smart Contract Deploy](./docs/SMART_CONTRACT_DEPLOY.md)
+
 ## 📣 Contributing
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for how to help out.
 
