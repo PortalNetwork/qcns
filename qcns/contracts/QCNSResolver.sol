@@ -84,7 +84,7 @@ contract QCNSResolver {
      */
     function setMultihash(bytes32 node, string key, bytes hash) public only_owner(node) {
         records[node].multihash[key] = hash;
-        MultihashChanged(node, hash);
+        MultihashChanged(node, key, hash);
     }
     
     /**
