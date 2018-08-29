@@ -167,8 +167,8 @@ contract QCNSResolver {
         return interfaceID == ADDR_INTERFACE_ID ||
         interfaceID == CONTENT_INTERFACE_ID ||
         interfaceID == NAME_INTERFACE_ID ||
-        interfaceID == ABI_INTERFACE_ID ||
         interfaceID == TEXT_INTERFACE_ID ||
+        interfaceID == MULTIHASH_INTERFACE_ID ||
         interfaceID == INTERFACE_META_ID;
     }
 }
