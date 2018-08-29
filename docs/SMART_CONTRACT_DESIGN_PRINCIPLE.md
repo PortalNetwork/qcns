@@ -1,4 +1,4 @@
-## Contract Design
+## Smart Contract Design
 
 Reference：https://medium.com/zeppelin-blog/onward-with-ethereum-smart-contract-security-97a827e47702
 
