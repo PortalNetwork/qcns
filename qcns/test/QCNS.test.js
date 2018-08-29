@@ -20,4 +20,12 @@ contract('QCNS', function (accounts) {
     assert.equal(await registry.owner(namehash.hash('qkc')), accounts[0]);
   });
 
+  it('register a domain', async () => {
+    await registrar.register(web3.sha3('qkc'), accounts[1], {from: accounts[1]});
+    assert.equal(await registry.owner(namehash.hash('qkc')), accounts[1]);
+    // register a subdomain
+    await registry.setSubnodeOwner(namehash.hash('qkc'), web3.sha3('subdomain'), accounts[1], {from: accounts[1]});
+    assert.equal(await registry.owner(namehash.hash('subdomain.qkc')), accounts[1]);
+  });
+
 });

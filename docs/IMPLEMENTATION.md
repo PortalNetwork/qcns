@@ -9,15 +9,11 @@ The link of QCNS smart contract as below:
 
 | Network    | Contract Name | Contract address                                   | Transaction hash
 |------------|---------------|----------------------------------------------------|---------------------
-| Testnet    | QCNS Registry | [0x74ee06CbfCB7BDfAf92e1114EA023fe2D5e420a4fF1a972e](http://testnet.quarkchain.io/address/0x74ee06CbfCB7BDfAf92e1114EA023fe2D5e420a4fF1a972e) | [0xb0a632b89ba6e424ef4a2739441b85e8752cd572c16e4cd4040452979f52f8eeff1a972e](http://testnet.quarkchain.io/tx/0xb0a632b89ba6e424ef4a2739441b85e8752cd572c16e4cd4040452979f52f8eeff1a972e)
-| Testnet    | QCNS Registrar | [0xEc9d53375ddD7E4b568F7c6190aFdf685c4e9C6BfF1a972e](http://testnet.quarkchain.io/address/0xEc9d53375ddD7E4b568F7c6190aFdf685c4e9C6BfF1a972e) | [0x7075a4bd2c1ad1aecec2085faa25fdb76ad9d41fd820a1eba31d4b0ef2140ef2ff1a972e](http://testnet.quarkchain.io/tx/0x7075a4bd2c1ad1aecec2085faa25fdb76ad9d41fd820a1eba31d4b0ef2140ef2ff1a972e)
+| Testnet    | QCNS Registry | [0x4BD29090F74A257a51b2695a263A453b1A1a57D8fF1a972e](http://testnet.quarkchain.io/address/0x4BD29090F74A257a51b2695a263A453b1A1a57D8fF1a972e) | [0x8067cb8c6be2abf72254779bcc8b21f26e0ad4460b66b639d82c86ece76b6b1aff1a972e](http://testnet.quarkchain.io/tx/0x8067cb8c6be2abf72254779bcc8b21f26e0ad4460b66b639d82c86ece76b6b1aff1a972e)
+| Testnet    | QCNS Registrar | [0xA5bfaEDF5D34efCe839A3d1705F25b8c9ab72fF1fF1a972e](http://testnet.quarkchain.io/address/0xA5bfaEDF5D34efCe839A3d1705F25b8c9ab72fF1fF1a972e) | [0x534925133d978f2005f37bfde184341d65763c31596f9e0f2c20aeb1fe7e3760ff1a972e](http://testnet.quarkchain.io/tx/0x534925133d978f2005f37bfde184341d65763c31596f9e0f2c20aeb1fe7e3760ff1a972e)
 
 - namehash.hash('qkc'): 0x594a477ed3f0b042faff347a58ea6074459e468efbb5aa3a2c51f7c3673be7cf
 - qkc sha3: 0x9cb936029f91a315e742fdfeb1c0d18b0c9cc56e512b5821c4dfe9bac7f3dd78
-
-#### Send Transaction to Registry setSubdomain to the start Registrar
-Tx hash: [http://testnet.quarkchain.io/tx/0x2630e2f2a79a09c31aa3faf44eee57e715a4bd624cb2e008fd550d3e9db33b7fff1a972e](http://testnet.quarkchain.io/tx/0x2630e2f2a79a09c31aa3faf44eee57e715a4bd624cb2e008fd550d3e9db33b7fff1a972e)
-
 
 ## QCNS Spec
 

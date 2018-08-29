@@ -12,18 +12,14 @@ contract QCNSResolver {
     bytes4 constant ADDR_INTERFACE_ID = 0x3b3b57de;
     bytes4 constant CONTENT_INTERFACE_ID = 0xd8389dc5;
     bytes4 constant NAME_INTERFACE_ID = 0x691f3431;
-    bytes4 constant ABI_INTERFACE_ID = 0x2203ab56;
-    bytes4 constant PUBKEY_INTERFACE_ID = 0xc8690233;
     bytes4 constant TEXT_INTERFACE_ID = 0x59d1d43c;
     bytes4 constant MULTIHASH_INTERFACE_ID = 0xe89401a1;
 
     event AddrChanged(bytes32 indexed node, address a);
     event ContentChanged(bytes32 indexed node, bytes32 hash);
     event NameChanged(bytes32 indexed node, string name);
-    event ABIChanged(bytes32 indexed node, uint256 indexed contentType);
-    event PubkeyChanged(bytes32 indexed node, bytes32 x, bytes32 y);
     event TextChanged(bytes32 indexed node, string indexedKey, string key);
-    event MultihashChanged(bytes32 indexed node, bytes hash);
+    event MultihashChanged(bytes32 indexed node, string indexedKey, bytes hash);
 
     struct PublicKey {
         bytes32 x;
@@ -34,10 +30,9 @@ contract QCNSResolver {
         address addr;
         bytes32 content;
         string name;
-        PublicKey pubkey;
         mapping(string=>string) text;
         mapping(uint256=>bytes) abis;
-        bytes multihash;
+        mapping(string=>bytes) multihash;
     }
 
     QCNS qcns;
@@ -87,8 +82,8 @@ contract QCNSResolver {
      * @param node The node to update.
      * @param hash The multihash to set
      */
-    function setMultihash(bytes32 node, bytes hash) public only_owner(node) {
-        records[node].multihash = hash;
+    function setMultihash(bytes32 node, string key, bytes hash) public only_owner(node) {
+        records[node].multihash[key] = hash;
         MultihashChanged(node, hash);
     }
     
@@ -101,33 +96,6 @@ contract QCNSResolver {
     function setName(bytes32 node, string name) public only_owner(node) {
         records[node].name = name;
         NameChanged(node, name);
-    }
-
-    /**
-     * Sets the ABI associated with an QCNS node.
-     * Nodes may have one ABI of each content type. To remove an ABI, set it to
-     * the empty string.
-     * @param node The node to update.
-     * @param contentType The content type of the ABI
-     * @param data The ABI data.
-     */
-    function setABI(bytes32 node, uint256 contentType, bytes data) public only_owner(node) {
-        // Content types must be powers of 2
-        require(((contentType - 1) & contentType) == 0);
-        
-        records[node].abis[contentType] = data;
-        ABIChanged(node, contentType);
-    }
-    
-    /**
-     * Sets the SECP256k1 public key associated with an QCNS node.
-     * @param node The QCNS node to query
-     * @param x the X coordinate of the curve point for the public key.
-     * @param y the Y coordinate of the curve point for the public key.
-     */
-    function setPubkey(bytes32 node, bytes32 x, bytes32 y) public only_owner(node) {
-        records[node].pubkey = PublicKey(x, y);
-        PubkeyChanged(node, x, y);
     }
 
     /**
@@ -150,34 +118,6 @@ contract QCNSResolver {
      */
     function text(bytes32 node, string key) public view returns (string) {
         return records[node].text[key];
-    }
-
-    /**
-     * Returns the SECP256k1 public key associated with an QCNS node.
-     * @param node The QCNS node to query
-     * @return x, y the X and Y coordinates of the curve point for the public key.
-     */
-    function pubkey(bytes32 node) public view returns (bytes32 x, bytes32 y) {
-        return (records[node].pubkey.x, records[node].pubkey.y);
-    }
-
-    /**
-     * Returns the ABI associated with an QCNS node.
-     * Defined in EIP205.
-     * @param node The QCNS node to query
-     * @param contentTypes A bitwise OR of the ABI formats accepted by the caller.
-     * @return contentType The content type of the return value
-     * @return data The ABI data
-     */
-    function ABI(bytes32 node, uint256 contentTypes) public view returns (uint256 contentType, bytes data) {
-        Record storage record = records[node];
-        for (contentType = 1; contentType <= contentTypes; contentType <<= 1) {
-            if ((contentType & contentTypes) != 0 && record.abis[contentType].length > 0) {
-                data = record.abis[contentType];
-                return;
-            }
-        }
-        contentType = 0;
     }
 
     /**
@@ -205,8 +145,8 @@ contract QCNSResolver {
      * @param node The ENS node to query.
      * @return The associated multihash.
      */
-    function multihash(bytes32 node) public view returns (bytes) {
-        return records[node].multihash;
+    function multihash(bytes32 node, string key) public view returns (bytes) {
+        return records[node].multihash[key];
     }
 
     /**
@@ -228,7 +168,6 @@ contract QCNSResolver {
         interfaceID == CONTENT_INTERFACE_ID ||
         interfaceID == NAME_INTERFACE_ID ||
         interfaceID == ABI_INTERFACE_ID ||
-        interfaceID == PUBKEY_INTERFACE_ID ||
         interfaceID == TEXT_INTERFACE_ID ||
         interfaceID == INTERFACE_META_ID;
     }
