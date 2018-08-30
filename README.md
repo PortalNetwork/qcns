@@ -1,4 +1,4 @@
-![Quarkchain Name Service](./assets/title.png)
+![Quarkchain Name Service](./assets/title.jpg)
 
 > 📖🔍 Documents of the Quarkchain Name Service.
 
