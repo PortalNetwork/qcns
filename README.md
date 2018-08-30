@@ -1,13 +1,13 @@
-![Quarkchain Name Service](./assets/title.jpg)
+![QuarkChain Name Service](./assets/title.jpg)
 
-> 📖🔍 Documents of the Quarkchain Name Service.
+> 📖🔍 Documents of the QuarkChain Name Service.
 
 ## 💡 What is BNS?
 BNS – or blockchain name system – is the protocol on the internet that turns human-comprehensible decentralized website names such as ‘website.perl’ or ‘mywebsite.eth’ into addresses understandable by decentralized network machines.
 
 ## 📝 Description
 
-QCNS is the Quarkchain Name Service, a distributed, open, and extensible naming system based on the Quarkchain blockchain.
+QCNS is the QuarkChain Name Service, a distributed, open, and extensible naming system based on the QuarkChain blockchain.
 
 ## 📚 Documents
 
