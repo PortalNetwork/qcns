@@ -22,6 +22,20 @@ Testing with `truffle`
 truffle test
 ```
 
+## Solidity coverage
+Get a repost of the Solidity code testing coverage.
+
+Install
+```
+npm install -g mkdirp
+npm install --save-dev solidity-coverage
+```
+
+Run solidity coverage
+```
+./node_modules/.bin/solidity-coverage
+```
+
 ## QCNSRegistry.sol
 Implementation of the QCNS registry, the central contract used to look up resolvers and owners for domains.
 

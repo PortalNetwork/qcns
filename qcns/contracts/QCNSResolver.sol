@@ -107,7 +107,7 @@ contract QCNSResolver {
      */
     function setText(bytes32 node, string key, string value) public only_owner(node) {
         records[node].text[key] = value;
-        TextChanged(node, key, key);
+        TextChanged(node, key, value);
     }
 
     /**
