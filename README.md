@@ -27,7 +27,7 @@ QCNS is the QuarkChain Name Service, a distributed, open, and extensible naming 
 - [Smart Contract Testing](./qcns/README.md)
 - [Smart Contract Design Principle](./docs/SMART_CONTRACT_DESIGN_PRINCIPLE.md)
 
-## ⚙️ TNS smart contract test coverage
+## ⚙️ QCNS smart contract test coverage
 __Continuous updating__
 - [Coverage Report](./tns/coverage/)
 
