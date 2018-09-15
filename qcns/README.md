@@ -1,4 +1,4 @@
-# QNS
+# QCNS
 
 Implementations for smart contracts for the QuarkChain Name Service.
 
