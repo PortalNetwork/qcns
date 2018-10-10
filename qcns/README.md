@@ -43,5 +43,5 @@ Implementation of the QCNS registry, the central contract used to look up resolv
 Implementation of the QCNS registrar, which issues (sub-)domains to the first account to request them.
 
 ## QCNSResolver.sol
-Implementation of the QCNS resolver that allows the owner of any domain to configure how its name should resolve.
+Implementation of the QCNS resolver, that allows the owner of any domain to configure how its name should resolve.
 
