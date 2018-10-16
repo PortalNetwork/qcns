@@ -31,6 +31,9 @@ QCNS is the QuarkChain Name Service, a distributed, open, and extensible naming 
 QCNS plays an connecting and entry layer in Web3.0 services. It connects with QuarkChain wallet, blockchain server, decentralized content resources, and decentralized database.
 ![QCNS](./assets/QCNS.png)
 
+## Tech Stack
+![QuarkChain Tech Stack](./assets/QuarkChain-layer.png)
+
 ## ⚙️ QCNS smart contract test coverage
 __Continuous updating__
 - [Coverage Report](./tns/coverage/)
