@@ -9,8 +9,8 @@ The link of QCNS smart contract as below:
 
 | Network    | Contract Name | Contract address                                   | Transaction hash
 |------------|---------------|----------------------------------------------------|---------------------
-| Testnet    | QCNS Registry | [0x74ee06CbfCB7BDfAf92e1114EA023fe2D5e420a4fF1a972e](http://testnet.quarkchain.io/address/0x74ee06CbfCB7BDfAf92e1114EA023fe2D5e420a4fF1a972e) | [0xb0a632b89ba6e424ef4a2739441b85e8752cd572c16e4cd4040452979f52f8eeff1a972e](http://testnet.quarkchain.io/tx/0xb0a632b89ba6e424ef4a2739441b85e8752cd572c16e4cd4040452979f52f8eeff1a972e)
-| Testnet    | QCNS Registrar | [0xEc9d53375ddD7E4b568F7c6190aFdf685c4e9C6BfF1a972e](http://testnet.quarkchain.io/address/0xEc9d53375ddD7E4b568F7c6190aFdf685c4e9C6BfF1a972e) | [0x7075a4bd2c1ad1aecec2085faa25fdb76ad9d41fd820a1eba31d4b0ef2140ef2ff1a972e](http://testnet.quarkchain.io/tx/0x7075a4bd2c1ad1aecec2085faa25fdb76ad9d41fd820a1eba31d4b0ef2140ef2ff1a972e)
+| Testnet    | QCNS Registry | [0xf0A2efAa0B5dbc592CcF8F6d12Ffd6c2C6332240f05d8fc2](http://testnet.quarkchain.io/address/0x74ee06CbfCB7BDfAf92e1114EA023fe2D5e420a4fF1a972e) | [0x4b1021cb8f3ff112971ec4df8ef5a425fc5bc6a0f852d45b97c15383ac64a02ff05d8fc2](http://testnet.quarkchain.io/tx/0x4b1021cb8f3ff112971ec4df8ef5a425fc5bc6a0f852d45b97c15383ac64a02ff05d8fc2)
+| Testnet    | QCNS Registrar | [0xCC1df8b8435C4860863C8ECAc5a72b4891bFf935f05d8fc2](http://testnet.quarkchain.io/address/0xEc9d53375ddD7E4b568F7c6190aFdf685c4e9C6BfF1a972e) | [0xa338709faceb75ab098c38b7ddd31a070f98b827e48a809a58e3026778bceae4f05d8fc2](http://testnet.quarkchain.io/tx/0xa338709faceb75ab098c38b7ddd31a070f98b827e48a809a58e3026778bceae4f05d8fc2)
 
 - namehash.hash('qkc'): 0x594a477ed3f0b042faff347a58ea6074459e468efbb5aa3a2c51f7c3673be7cf
 - qkc sha3: 0x9cb936029f91a315e742fdfeb1c0d18b0c9cc56e512b5821c4dfe9bac7f3dd78
