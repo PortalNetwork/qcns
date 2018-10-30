@@ -84,8 +84,10 @@ Shutting down testrpc-sc (pid 87275)
 Done.
 ```
 
-## 🗃 Changelog
-See [CHANGELOG.md](./CHANGELOG.md).
+## Resources
+- [Official Website](https://quarkchain.io)
+- [Testnet](https://testnet.quarkchain.io)
+- [Developer API](https://developers.quarkchain.io/#introduction)
 
 ## 📣 Contributing
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for how to help out.
