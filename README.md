@@ -27,11 +27,18 @@ QCNS is the QuarkChain Name Service, a distributed, open, and extensible naming 
 - [Smart Contract Testing](./qcns/README.md)
 - [Smart Contract Design Principle](./docs/SMART_CONTRACT_DESIGN_PRINCIPLE.md)
 
-## 📝 QCNS Flow
+## Testnet Contract
+| Network    | Contract Name | Contract address                                   | Transaction hash
+|------------|---------------|----------------------------------------------------|---------------------
+| Testnet    | QCNS Registry | [0xf0A2efAa0B5dbc592CcF8F6d12Ffd6c2C6332240f05d8fc2](http://testnet.quarkchain.io/address/0xf0A2efAa0B5dbc592CcF8F6d12Ffd6c2C6332240f05d8fc2) | [0x4b1021cb8f3ff112971ec4df8ef5a425fc5bc6a0f852d45b97c15383ac64a02ff05d8fc2](http://testnet.quarkchain.io/tx/0x4b1021cb8f3ff112971ec4df8ef5a425fc5bc6a0f852d45b97c15383ac64a02ff05d8fc2)
+| Testnet    | QCNS Registrar | [0xCC1df8b8435C4860863C8ECAc5a72b4891bFf935f05d8fc2](http://testnet.quarkchain.io/address/0xCC1df8b8435C4860863C8ECAc5a72b4891bFf935f05d8fc2) | [0xa338709faceb75ab098c38b7ddd31a070f98b827e48a809a58e3026778bceae4f05d8fc2](http://testnet.quarkchain.io/tx/0xa338709faceb75ab098c38b7ddd31a070f98b827e48a809a58e3026778bceae4f05d8fc2)
+| Testnet    | QCNS Resolver | [0x0c5077C1f90658f392844533CEa0e34313908aC6f05d8fc2](http://testnet.quarkchain.io/address/0x0c5077C1f90658f392844533CEa0e34313908aC6f05d8fc2) | [0xb82af29b275d791fa71907c704d820906090274a2cf55207348beb1c921fa297f05d8fc2](https://testnet.quarkchain.io/tx/0xb82af29b275d791fa71907c704d820906090274a2cf55207348beb1c921fa297f05d8fc2)
+
+## 📝 QCNS in Web3.0
 QCNS plays an connecting and entry layer in Web3.0 services. It connects with QuarkChain wallet, blockchain server, decentralized content resources, and decentralized database.
 ![QCNS](./assets/QCNS.png)
 
-## Tech Stack
+## QuarkChain Technical Stack
 ![QuarkChain Tech Stack](./assets/QuarkChain-layer.png)
 
 ## ⚙️ QCNS smart contract test coverage
