@@ -39,7 +39,36 @@ QCNS plays an connecting and entry layer in Web3.0 services. It connects with Qu
 ![QCNS](./assets/QCNS.png)
 
 ## QuarkChain Technical Stack
+QuarkChain is a high-throughput blockchain that aims to achieve hundreds of thousands TPS (Transaction per Second) through the sharding technology. It is designed to provide secure, decentralized, and scalable solution for future dApps. QuarkChain Name Service (QCNS) will be built upon QuarkChain that will interact with each of its stack layer differently.
 ![QuarkChain Tech Stack](./assets/QuarkChain-layer.png)
+
+### State Layer
+State layer is where QuarkChain's user “state”, or user information and behavior, is stored. It is where users have the ability to control their own state.
+![QuarkChain Tech Stack](./assets/QuarkChain-state.png)
+
+### Computation Layer
+QuarkChain uses EVM (Ethereum Virtual Machine) in its computation layer, which is responsible for executing complicated calculations. It is in charge of managing, checking the code of smart contract on QuarkChain. For instance, when a transaction occurs, the logic designed in EVM will determine its path that cannot be altered, making the smart contracts on QuarkChain immutable and temper-proof. Portal Network will be deploying QCNS (Smart Contract Standard) on this layer that consists 3 major components.
+![QuarkChain Tech Stack](./assets/QuarkChain-computation.png)
+
+### Component Layer
+The design of digital assets can have more functions through combing the State Layer and Computation Layer, such as : crypto assets, and identities. Those programmable assets has many more potential usages and sub-economies within. QCNS includes three major component: a `registry`, a `registrar`, and a `resolver`.
+
+A `registry` component stores all the information relative to a domain, and can operate the set of logics to map between the QuarkChain domains and its owners.
+A `registrar` component governs the domain purchase through the customized auction or trading rules.
+A `resolver` component processes the corresponding resources from wallet address to decentralized application or website on QuarkChain.
+![QuarkChain Tech Stack](./assets/QuarkChain-component.png)
+
+### Protocol Layer
+On the Protocol Layer, we will be presenting our BNS (Blockchain Name Service) standards that can make the QCNS more efficient and applicable. This layer integrate the logic behind QCNS (computation layer and component layer), and presents a gateway for users and developers to use and interact.
+![QuarkChain Tech Stack](./assets/QuarkChain-protocol.png)
+
+### User Control Layer
+User control layer is in charge of managing private keys to communicate with the state layer. QCNS is completely decentralized, and governed by smart contracts, which allows users to have full control over their domains. Users can control, set up, and manage their digital asset with an easier and readable text.
+![QuarkChain Tech Stack](./assets/QuarkChain-user.png)
+
+### Application Layer
+QCNS can be easily implemented into any of the services or application on QuarkChain who wish to make decentralized user experience better. For instance, wallet that can resolve QCNS will allow users to easily send or receive QuarkChain Token (QKC); dApp that utilize QCNS will enable users to have their own digital identity that are more meaningful and valuable. We believe that QCNS is an essential components to provide a better environment for both technical and non-technical users. 
+![QuarkChain Tech Stack](./assets/QuarkChain-app.png)
 
 ## ⚙️ QCNS smart contract test coverage
 __Continuous updating__
